@@ -39,9 +39,9 @@ export class AppComponent {
 
   }
 
-update(e: MouseEvent) {
+sortArticleList(e: MouseEvent) {
      
-    console.log(e);
+    return this.articles.sort((a: Article, b: Article) => b.vote - a.vote);
    
   }
 }

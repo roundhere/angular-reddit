@@ -23,6 +23,6 @@ Submit link
 </form>
 
 <div class="ui grid posts">
-  <app-article *ngFor="let article of articles" (outVote)="update($event)" 
+  <app-article *ngFor="let article of articles" (outVote)="sortArticleList($event)" 
       [article]="article"></app-article>
 </div>
